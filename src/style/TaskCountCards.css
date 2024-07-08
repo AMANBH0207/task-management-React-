@@ -1,0 +1,27 @@
+.Tasks{
+    display:flex;
+    justify-content: space-between;
+}
+.card{
+    border-radius: 20px;
+    padding:20px;
+    width:19%;
+    margin-top: 0.5rem;
+    color:white;
+}
+.unassignedTask{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+    background-color: #827cdf;
+}
+.assignedTasks{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+    background-color: #f99c5e;
+}
+.tasksForReview{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+    background-color: #db1c5d;
+}
+.completedTasks{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+    background-color: #23b3cf;
+}

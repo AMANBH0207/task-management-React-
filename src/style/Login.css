@@ -1,0 +1,155 @@
+.socialSignin1{
+    background-color: #14112e;
+    color:white;
+    padding:5rem 2rem ;
+    width:40%;
+}
+.Google1{
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    color:white;
+    background-color: #4f86ec;
+    border:none;
+    margin:0 0 1rem;
+    width:100%;
+}
+.Google1:hover{
+    background-color: #ec4f4f;
+}
+.Facebook1{
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    color:white;
+    background-color: #5372a9;
+    border:none;
+    margin:0 0 1rem;
+    width:100%;
+}
+.Facebook1:hover{
+    background-color: #000dff;
+}
+.Twitter1{
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    color:white;
+    background-color: #00a1ee;
+    border:none;
+    margin:0 0 1rem;
+    width:100%;
+}
+.Twitter1:hover{
+    background-color: #343434;
+}
+.loginWithEmail1{
+
+    background-color: white;
+    padding:3rem 2rem ;
+    width:60%;
+}
+.loginMsg1{
+    text-align: center;
+}
+.inputText1{
+    width: 100%;
+}
+.inputText1 input{
+    border-radius: 5px;
+    border: none;
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.211);
+}
+.loginWithEmail1 button{
+    margin-top: 3rem;
+    background-color: #4e78ff;
+    border:none;
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    color:white;
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.211);
+}
+.loginWithEmail1 button:hover{
+    background-color:  #ec4f4f;
+}
+#errors{
+    display: none;
+    border:2px solid #ff0000;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #ec4f4f;
+    border-radius: 5px;
+    color:white;
+    height: 40px;
+}
+.loginBox1{
+    height: 450px;
+    z-index: 1;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.648);
+    display:flex;
+    margin:auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.UserPrompt{
+    width:30%;
+    display: flex;
+    align-items: center;
+}
+.userType{
+    padding:1rem 2rem;
+    background-color: #5a62ff;
+    position: absolute;
+    color: white;
+    left: 65%;
+    top:20%;
+    border-radius: 10px;
+}
+.pointer{
+    cursor:pointer;
+}
+.bgimg1{
+    border-radius: 10px;
+    position: absolute;
+    top:65px;
+    right:20px;
+    z-index: 1;
+    height: 300px;
+    width:600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.adminBgImg{
+    background-image:url("../components/Assets/dashboard_img.png") ;
+}
+.userBgImg{
+    background-image:url("../components/Assets/Users_Home_Page.png") ;
+}
+.logo{
+    padding: 0.5rem 0;
+  }
+  .logo img{
+    border-radius: 5px;
+    height: 40px;
+  }
+.login{
+    z-index: 0;  
+    display:flex;
+    height: 90vh;
+}
+.adminBg{
+    background-image: linear-gradient(rgba(177, 28, 236, 0.705), rgba(63, 76, 197, 0.826), rgba(63, 175, 197, 0.826));
+}
+.userBg{
+    background-image: linear-gradient(rgba(228, 30, 76, 0.705), rgba(63, 152, 197, 0.826), rgba(128, 63, 197, 0.826));
+}
+.ChangeButton{
+    height: 2rem;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+

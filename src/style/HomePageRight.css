@@ -1,0 +1,49 @@
+
+.rightSection{
+    width: 30%;
+    padding: 0px 0px 0px 2rem;
+}
+.rightSection1{
+    overflow: hidden;
+    border-bottom: 2px solid rgb(220, 210, 210);
+}
+.members{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+.members h5{
+    color:#827cdf;
+}
+.memberimg{
+    display: flex;
+}
+.memberimg img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin: 0 0.5rem 2rem;
+}
+.calender{
+    margin-top: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+    border-radius: 15px;
+    text-align: center;
+}
+.calender table{
+    width: 100%;
+    padding:0 0 2rem;
+}
+  .analytics{
+    padding:1rem 1rem;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+    border-radius: 15px;
+  }
+  .chartLegend{
+    display: flex;
+    justify-content: center;
+    height: 244px;
+    width: 100%;
+  }

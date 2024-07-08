@@ -1,0 +1,60 @@
+.mainContent{
+    display:flex;
+}
+.mainContent1{
+    width:60%;
+    padding: 0rem 2rem 0rem;
+    border-right: 2px solid rgb(220, 210, 210);
+}
+
+  .inProgresstasksList{
+    display: none;
+    overflow: hidden;
+    border-radius: 10px;
+    left: 330px;
+    border: 2px solid rgb(220, 210, 210);
+    position: absolute;
+    background-color: white;
+    width: 50%;
+  }
+  .inProgresstasksList ul{
+    list-style:none ;
+    height: 250px;
+    padding: 0;
+    overflow-y: scroll;
+  }
+  .newTask{
+    background-color: #eff3fa;
+    padding:0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .inProgresstasksList li{
+    display: flex;
+    align-items: center;
+  }
+  .inProgresstasksList li:hover{
+    background-color: #ebf5fa;
+    cursor: pointer;
+  }
+  .inProgresstasksList img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin: 0.5rem
+  }
+  .tasksNames{
+    text-align: center;
+    padding:1rem 1rem;
+    width:30%;
+  }
+  .Taskspriority{
+    text-align: center;
+    padding:1rem 1rem;
+    width:30%;
+  }
+  .usersPhotoonTasks{
+    padding:0rem 1rem;
+    width:40%;
+  }

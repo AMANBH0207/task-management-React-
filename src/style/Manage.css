@@ -1,0 +1,133 @@
+.ManageTandU{
+    display:flex;
+}
+.choose{
+    padding:2rem 4rem;
+    border-right: 2px solid rgb(220, 210, 210);
+}
+.choose ul{
+    list-style: none;
+    padding: 0;
+}
+.choose li{
+    padding:1rem 0;
+}
+.choose a{
+    color:rgb(0, 48, 119);
+    text-decoration: none;
+}
+.taskList{
+    width: 80%;;
+    height: 84vh;
+    overflow-y: scroll;
+    border:2px solid rgb(174, 174, 174);
+    border-radius: 10px;
+    margin: 1rem 1rem 1rem 2rem;
+}
+.taskList ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.teamMembers{
+    display:flex;
+}
+.teamMembers img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.taskList li{
+    margin-bottom: 1px;
+    padding:30px;
+    display:flex;
+    justify-content: space-between;
+}
+.taskList li h5{
+    width:100px;
+}
+.options{
+ display: none;
+ border-radius: 10px;
+ padding:1rem;
+ position:absolute;
+ background-color: rgb(255, 255, 255);
+ color:rgb(0, 0, 0);
+ top:120px;
+}
+.optionsDiv:hover .options{
+    display:block
+}
+.high{
+    background-color: #f10b0b49;
+}
+.medium{
+    background-color: #efcf004b;
+}
+.low{
+    background-color: #54b4454b;
+}
+.high:hover{
+    background-color: #f10b0bc4;
+    color: white;
+}
+.medium:hover{
+    background-color: #efcf00a3;
+    color: white;
+}
+
+.low:hover{
+    background-color: #54b445ce;
+    color: white;
+}
+  .AddTaskPopup{
+    margin:1rem 2rem 1rem 0rem;
+    border-radius: 15px;
+    background-color: white;
+    border:2px solid rgb(174, 174, 174);
+    overflow: hidden;
+    line-height: 2rem;
+  }
+  .newTask{
+    background-color: #eff3fa;
+    padding:0 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .titleDiv{
+    display: flex;
+  }
+  .newTaskForm{
+    padding: 2rem;
+  }
+  .crossBtn{
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    top:8.2rem;
+    margin-left:0.5rem;
+  }
+.newTaskFormDiv{
+    display: flex;
+}
+.unassignedUsers{
+    width: 30%;
+    padding:0 2rem;
+    height: 90%;
+  }
+  .newTaskForm textarea{
+    width:85%;
+    height:100px;
+    resize:none;
+    border:none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+  }
+  .newTaskForm span{
+    box-shadow: 2px 2px 4px rgba(107, 106, 106, 0.475);
+    padding:2px 2rem;
+    border-radius: 5px;
+}
+  

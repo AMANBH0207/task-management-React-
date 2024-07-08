@@ -1,0 +1,15 @@
+
+.cards{
+    overflow: hidden;
+    border-radius: 20px;
+    padding:20px;
+    height: 150px;
+    margin-top: 1rem;
+    color:rgb(0, 0, 0);
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+.ReviewTask{
+    background-color: #f8cf2abd;
+}

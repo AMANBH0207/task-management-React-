@@ -1,0 +1,10 @@
+.assigneduser{
+    width:max-content
+  }
+
+  .assigneduser img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+  }

@@ -1,0 +1,73 @@
+.newTaskForm1 {
+  padding: 2rem;
+  width: 80%;
+}
+.newTaskFormDiv1 {
+  display: flex;
+}
+
+.inputSearch1 {
+  overflow: hidden;
+  border: 2px solid rgb(174, 174, 174);
+  border-radius: 10px;
+  display: flex;
+}
+
+.inputSearch1 i {
+  margin: 0 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: gray;
+}
+
+.inputSearch1 input {
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+}
+
+.inputSearch1 input:focus {
+  outline: none;
+}
+
+.UserFound1 {
+  margin-top: 20px;
+  width: 100%;
+}
+.UserFound1 div:hover {
+  background-color: #ebf5fa;
+  cursor: pointer;
+}
+.UserFound1 img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin: 0.5rem;
+}
+.savetaskDiv1 {
+  display: flex;
+}
+.saveTaskBtns1 {
+  padding: 0.5rem 2rem 0.5rem 0;
+  margin: auto 0 auto auto;
+}
+.saveTaskBtns1 button {
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #0185e0;
+  color: white;
+}
+.saveTaskBtns1 button:hover {
+  background-color: #053254;
+  cursor: pointer;
+}
+#userFoundonSearch{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prompt1{
+  text-align: center;
+}

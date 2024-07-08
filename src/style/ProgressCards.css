@@ -1,0 +1,85 @@
+.TasksProgressReport h3{
+    margin: 0;
+}
+.TasksProgressCard1{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding:10px 35px 10px;
+    margin: 0.5rem 0 0;
+    border: 1px solid gray
+}
+.TasksProgressCard{
+    display: flex;
+    border-radius: 10px;
+    padding:10px 35px 10px;
+    margin: 0.5rem 0 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+}
+.Alltasks{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem 0rem;
+    align-items: center;
+}
+.createbutton{
+    border:none;
+    padding:0px 2rem 0px;
+    border-radius: 40px;
+    color:white;
+    height: 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.675);
+
+}
+.CreateTask{
+    background-color: #7772c7;
+    margin-right: 5px;
+}
+.CreateUser{
+    background-color: #59e159;
+    margin-left: 5px;
+}
+.TaskName{
+    width: 25%;
+}
+.teamMembers{
+    display:flex;
+    width:35%;
+}
+.center{
+    margin: auto 0 auto;
+}
+.teamMembers img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.progressDiv{
+    width: 35%;
+}
+.progresspercent{
+    display:flex;
+    justify-content: space-between;
+}
+.progressBar{
+    display: flex;
+    background-color: gray;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progressLow{
+    height: 100%;
+    background-color:rgb(11, 228, 11);
+}
+.progressMedium{
+    height: 100%;
+    background-color:rgb(211, 228, 18);
+}
+.progressHigh{
+    height: 100%;
+    background-color:rgb(236, 45, 20);
+}

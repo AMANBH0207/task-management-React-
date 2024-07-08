@@ -1,0 +1,19 @@
+.mainContent{
+    display:flex;
+}
+.mainContent1{
+    width:60%;
+    padding: 0rem 2rem 0rem;
+    border-right: 2px solid rgb(220, 210, 210);
+}
+.reviewTasks{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding:0 1rem 0 2rem;
+  width: 70%;
+  display:grid;
+  grid-template-columns: repeat(3, 30%);
+  gap:30px;
+  height: 89vh;
+  border-right: 2px solid rgb(220, 210, 210);
+}

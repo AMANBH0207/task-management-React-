@@ -1,0 +1,12 @@
+.profileOptions{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    border:2px solid rgb(203, 202, 202);
+    padding:1rem 2.5rem;
+    background-color: white;
+    top: 50px;
+}
+.userProfileDiv:hover .profileOptions{
+    display: block;
+}
