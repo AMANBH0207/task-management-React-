@@ -2,16 +2,19 @@ import React, { useEffect, useState } from 'react';
 import "../style/HomePageRight.css";
 import Chart from "chart.js/auto";
 import { Bar,Pie } from "react-chartjs-2";
+import { Link } from 'react-router-dom';
 
 
 
 
 function HomePageRight({count}) {
+  const [memberImg,setMemberImg]=useState([]);
 
   const [memberCount, setMemberCount] = useState();
   useEffect(()=>{
+    let Addedusers=JSON.parse(localStorage.getItem("AddedUsers")) || [];
+    setMemberImg(Addedusers);
     setMemberCount(count);
-    console.log("hi");
   },[count])
   
 
@@ -43,8 +46,12 @@ const barColors = [
     <>
     <div className="rightSection">
             <div className="rightSection1">
-              <div className="members"><h3>Members({memberCount})</h3><h5>view all</h5></div>
-              <div className="memberimg"></div>
+              <div className="members"><h3>Members({memberCount})</h3><Link to=""><h5>view all</h5></Link></div>
+              <div className="memberimg">
+              {memberImg.map((user,index)=>{
+            return  <img key={index} className="center" src={user.userphoto} alt={index}/>
+                })}
+              </div>
             </div>
             <div className="calender">
 

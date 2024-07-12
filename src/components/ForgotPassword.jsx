@@ -35,7 +35,7 @@ function ForgotPassword({formVal}) {
       </div>
 
       <nav>
-        <div className="logo"><img  src={TaskLogo} alt=""/></div>
+        <div className="logo0"><img  src={TaskLogo} alt=""/></div>
         </nav>
         <div className={`login ${formVal ? "adminBg" : "userBg"}`}>
         <div className={`bgimg1 ${formVal ? "adminBgImg" : "userBgImg"}`}></div>

@@ -102,7 +102,7 @@
     background-color: #5a62ff;
     position: absolute;
     color: white;
-    left: 65%;
+    left: 50%;
     top:20%;
     border-radius: 10px;
 }
@@ -126,10 +126,11 @@
 .userBgImg{
     background-image:url("../components/Assets/Users_Home_Page.png") ;
 }
-.logo{
+.logo0{
+    background-color:#1c67cee2 ;
     padding: 0.5rem 0;
   }
-  .logo img{
+  .logo0 img{
     border-radius: 5px;
     height: 40px;
   }
@@ -142,7 +143,7 @@
     background-image: linear-gradient(rgba(177, 28, 236, 0.705), rgba(63, 76, 197, 0.826), rgba(63, 175, 197, 0.826));
 }
 .userBg{
-    background-image: linear-gradient(rgba(228, 30, 76, 0.705), rgba(63, 152, 197, 0.826), rgba(128, 63, 197, 0.826));
+    background-image: linear-gradient(rgba(228, 126, 30, 0.705), rgba(63, 152, 197, 0.826), rgba(128, 63, 197, 0.826));
 }
 .ChangeButton{
     height: 2rem;

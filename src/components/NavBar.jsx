@@ -1,49 +1,54 @@
 import { React } from "react";
 import "../style/NavBar.css";
 import taskassignmentlogo from "../Userphotos/Task assignment logo.png";
-import Managelogo from "./Assets/Manage_TaskAND_Users.png";
 import User from "./Assets/User.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHouse,faListCheck,faBarsProgress,faCircleExclamation,faRightFromBracket,faBell,faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faListCheck,
+  faBarsProgress,
+  faCircleExclamation,
+  faRightFromBracket,
+  faBell,
+  faMagnifyingGlass,
+  faUsersGear,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import ProfileOptions from "./ProfileOptions";
-function NavBar({component}) {
+import AdminRoutes from "../Routes/AdminRoutes";
+function NavBar({ component }) {
   return (
     <div>
       <div className="mainDiv">
         <nav className="navBar">
           <div className="logo">
             <a href="./Dashboard.html">
-              <img src={taskassignmentlogo} alt="taskassignmentlogo"/>
+              <img src={taskassignmentlogo} alt="taskassignmentlogo" />
             </a>
           </div>
           <ul className="navLinks">
             <li>
-              <Link to="/admin/home">
+              <Link to="">
                 <FontAwesomeIcon icon={faHouse} />
               </Link>
             </li>
             <li>
-              <Link to="/admin/manage">
-                <img
-                  src={Managelogo}
-                  alt="TaskAndUser"
-                  style={{ height: "30px" }}
-                />
+              <Link to="manage">
+                <FontAwesomeIcon icon={faUsersGear} />
               </Link>
             </li>
             <li>
-              <Link to="/admin/task-for-review">
+              <Link to="task-for-review">
                 <FontAwesomeIcon icon={faListCheck} />
               </Link>
             </li>
             <li>
-              <Link to="/admin/timeline">
+              <Link to="timeline">
                 <FontAwesomeIcon icon={faBarsProgress} />
               </Link>
             </li>
             <li>
-              <Link to="/create-an-issue">
+              <Link to="create-an-issue">
                 <FontAwesomeIcon icon={faCircleExclamation} />
               </Link>
             </li>
@@ -90,7 +95,7 @@ function NavBar({component}) {
               </div>
             </div>
           </div>
-          {component}
+          <AdminRoutes />
         </div>
       </div>
     </div>

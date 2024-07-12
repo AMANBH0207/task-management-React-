@@ -31,26 +31,50 @@ function Welcome_page() {
 
       <div className="third_section">
         <div className="Info_section">
-          <div>
+          <div style={{width:"35%",lineHeight:"1.5"}}>
             <h2>Not Satisfied? Reassign....</h2>
+            <div style={{fontSize:"13px"}}>
             <p>
               Not satisfied by the task sent for review? No worry, just
-              reassign.
+              reassign.Our system is designed to ensure you get the quality and precision you need.
             </p>
+            <ol>
+            <li><b>Identify the Issue:</b> If you find that the task doesn't meet your expectations, identify the specific areas that need improvement.</li>
+            <li><b>Provide Feedback:</b> Communicate your concerns clearly. Detail what aspects were lacking and what changes are necessary.</li>
+            <li><b>Reassign the Task:</b> Use our simple reassignment feature to send the task back for revisions. </li>
+            </ol>
+            </div>
           </div>
           <div className="imgBg1"><img src={reassign} alt="reassign" /></div>
         </div>
+
         <div className="Info_section">
           <div className="imgBg2"><img src={update} alt="update" /></div>
-          <div>
+          <div style={{width:"35%",lineHeight:"1.5"}}>
             <h2>Post Updates</h2>
-            <p>Just post links, files and progress for the task on progress.</p>
+            <div style={{fontSize:"13px"}}>
+            <p>Just post links, files and progress for the task on progress. Stay on top of your project with our streamlined update system.</p>
+            <ol>
+              <li><b>Post Links:</b> Share relevant links directly within the task page. Whether it’s reference materials, external resources, or examples.</li>
+              <li><b>Upload Files:</b> Attach important files to the task. From documents and spreadsheets to images and presentations, our platform supports a wide range of file</li>
+              <li><b>Provide Details:</b> Include detailed notes and comments with each update. Clearly outline what has been done, what is currently being worked on, and any challenges or roadblocks encountered.</li>
+            </ol>
+            </div>
           </div>
         </div>
         <div className="Info_section">
-          <div>
+        <div style={{width:"35%",lineHeight:"1.5"}}>
             <h2>Manage Tasks</h2>
-            <p>Manage All you tasks and check their status at ease.</p>
+            <div style={{fontSize:"13px"}}>
+            <p>Manage All you tasks and check their status at ease.Effortlessly oversee all your tasks and stay updated on their status with our intuitive task management system</p>
+            <ol>
+              <li><b>Centralized Dashboard:</b> View all your tasks in one place with our centralized dashboard. Get a comprehensive overview of what’s pending, in progress, and completed.</li>
+              <li><b>Status Updates:</b> Easily check the status of each task. With clear indicators and progress bars, you can quickly see how far along each task is and what needs your attention.</li>
+              <li><b>Prioritize Work:</b> Organize tasks by priority to ensure the most critical work is completed first.</li>
+              <li><b>Set Deadlines:</b> Assign due dates to tasks and receive reminders as deadlines approach. Stay on schedule and ensure timely completion of all your projects.</li>
+            </ol>
+            </div>
+           
           </div>
          <div className="imgBg3"><img src={Manage} alt="Manage" /></div> 
         </div>

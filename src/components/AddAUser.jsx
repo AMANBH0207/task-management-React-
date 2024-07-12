@@ -2,36 +2,41 @@ import "../style/AddAUser.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { searchUser,saveUser} from "../utils/utils";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
-function AddAUser({count}) {
+function AddAUser({count, handleCross, successNotification, errorNotification}) {
+  let Addedusers = JSON.parse(localStorage.getItem("AddedUsers")) || [];
+  let Mainusers = JSON.parse(localStorage.getItem("MainUsers")) || [];
   const [userFoundonSearch, setUserFoundonSearch] = useState(undefined);
   function handleSearch(e){
     const value = e.target.value
     setUserFoundonSearch(searchUser(value));
   }
-
+  function searchUser(user) {
+    const usr = Mainusers.find(
+      (usr) => usr.email.toLowerCase() === user.toLowerCase()
+    );
+    return usr;
+  }
+  function saveUser(user) {
+    if (user === undefined) {
+      errorNotification("User Not Found. Cannot add user");
+    } else if (Addedusers.some((value) => value.email === user.email)) {
+      errorNotification("User already added");
+    } else {
+      Addedusers.push(user);
+      successNotification("User Added Successfully");
+      localStorage.setItem("AddedUsers", JSON.stringify(Addedusers));
+      handleCross();
+    }
+  }
 
   function handleSave(e){
     e.preventDefault();
-    const message = saveUser(userFoundonSearch);
-    notify(message);
-    count();
+    saveUser(userFoundonSearch)
+    count(); 
   }
-  const notify = (message) => toast.error(message,{
-    progressStyle: { background: 'red' }
-  });
-
-  
-  
   return (
     <>
-    <div>
-        <ToastContainer />
-      </div>
-
       <form>
         <div className="newTaskFormDiv1">
           <div className="newTaskForm1">

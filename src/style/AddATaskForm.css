@@ -14,6 +14,7 @@
 }
 .assigneduser0 {
   width: max-content;
+  position: relative;
 }
 .assigneduser0 img {
   border-radius: 50%;
@@ -24,7 +25,7 @@
 .newTaskFormDiv0 {
   display: flex;
 }
-.unassignedUsers0 {
+.unassignedUsers0{
   width: 30%;
   padding: 0 2rem;
   height: 90%;
@@ -112,16 +113,13 @@
   background-color: #053254;
   cursor: pointer;
 }
-#message0 {
-  display: none;
-}
 .userImages0 {
   position: relative;
   z-index: 1;
 }
 .crossbtn0 {
   font-size: 10px;
-  top: 9.3rem;
+  top: 0.5rem;
   text-align: center;
   z-index: 2;
   position: absolute;
@@ -130,17 +128,5 @@
   border-radius: 50%;
   background-color: #ff0019;
   border: none;
-  margin-left: 9px;
-}
-.errormsg0 {
-  height: 40px;
-  display: none;
-  font-style: italic;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  color: red;
-}
-.errormsg0 p {
-  margin: 0;
+  margin-left: 10px;
 }
