@@ -7,7 +7,7 @@ import { getData, setData } from "../pages/Service";
 function AddATaskForm({ handleCross, successNotification, errorNotification }) {
   const [usersArray, setUsersArray] = useState([]);
   const [arr ,setArr]=useState("");
-  const [AddedUsers, setAddedUsers] = useState([]);
+  const [AddedUsers, setAddedUsers] = useState(getData("AddedUsers"));
   const [val, setVal] = useState({
     title: "",
     description: "",
@@ -27,9 +27,6 @@ function AddATaskForm({ handleCross, successNotification, errorNotification }) {
 //calling ls to get the data
 useEffect(()=>{
   setArr(getData("AddedTasks"));
-},[])
-useEffect(()=>{
-  setAddedUsers(getData("AddedUsers"));
 },[])
   useEffect(() => {
     const updatedTaskType =
