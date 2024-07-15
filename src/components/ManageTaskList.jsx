@@ -1,96 +1,46 @@
-import React from 'react'
-import '../style/ManageTaskList.css'
+import React, { useEffect, useState } from "react";
+import "../style/ManageTaskList.css";
+import { getData } from "../pages/Service";
 
 function ManageTaskList() {
-    
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    setTasks(getData("AddedTasks"));
+  }, []);
+
+  const selectedTask =(task)=>{
+    console.log(task);
+  }
+
   return (
     <>
-    <div className="taskList">
-                        <ul>
-                            <li className="high pointer">
-                                <h5 className="center">FrontEnd Task</h5>
-                                <p>High-Priority</p>
-                                <div className="teamMembers">
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                <p className="center">+8 Members</p>
-                            </div>
-                        </li>
-                            <li className="low pointer"><h5 className="center">Improve UI</h5>
-                                <p>Low-Priority</p>
-                                <div className="teamMembers">
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                    <p className="center">+8 Members</p>
-                                </div>
-                            </li>
-                            <li className="medium pointer"><h5 className="center">Fullstack Project</h5>
-                                <p>Medium-Priority</p>
-                                <div className="teamMembers">
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                    <p className="center">+8 Members</p>
-                                </div>
-                            </li>
-                            <li className="high pointer"><h5 className="center">Backend Task</h5>
-                                <p>High-Priority</p>
-                                <div className="teamMembers">
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                <p className="center">+8 Members</p>
-                            </div>
-                        </li>
-                            <li className="medium pointer"><h5 className="center">React Project</h5>
-                                <p>Medium-Priority</p>
-                                <div className="teamMembers">
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                    <p className="center">+8 Members</p>
-                                </div>
-                            </li>
-                            <li className="medium pointer"><h5 className="center">E-commerce App</h5>
-                                <p>Medium-Priority</p>
-                                <div className="teamMembers">
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                    <p className="center">+8 Members</p>
-                                </div>                            </li>
-                            <li  className="low pointer"><h5 className="center">UI UX Design</h5>
-                                <p>Low-Priority</p>
-                                <div className="teamMembers">
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                    <p className="center">+8 Members</p>
-                                </div>
-                            </li>
-                            <li className="high pointer"><h5 className="center">Bug Fixes</h5>
-                                <p>High-Priority</p>
-                                <div className="teamMembers">
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da" alt=""/>
-                                    <img className="center" src="https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97" alt=""/>
-                                    <p className="center">+8 Members</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+      <div className="taskList">
+        <ul>
+          {tasks.map((task, id) => {
+            return (
+              <li className={task.priority==="High"?"pointer high":task.priority==="Medium"?"pointer medium":"pointer low"} key={id} onClick={()=>{selectedTask(task)}}>
+                <h5 className="center">{task.title}</h5>
+                <p>{task.priority}</p>
+                <div className="teamMembers">
+                  {task.assignedusers.map((assignedUser, index) => {
+                    return (
+                      <img
+                        key={index}
+                        className="center"
+                        src={assignedUser.userphoto}
+                        alt=""
+                      />
+                    );
+                  })}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </>
-  )
+  );
 }
 
-export default ManageTaskList
+export default ManageTaskList;

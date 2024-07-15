@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/TaskDetails.css";
 
-function TaskDetails(props) {
+function TaskDetails({props}) {
   return (
     <>
       {/* Review Task Details */}
@@ -74,7 +74,7 @@ function TaskDetails(props) {
               <span>Image.jpg</span>
             </div>
           </div>
-          <div className="savetaskDiv" style={{ display: props.props }}>
+          <div className="savetaskDiv" style={{ display: props }}>
             <div className="saveTaskBtns">
               <button>Approve and report completed</button>
               <button>Deny and create an issue</button>
