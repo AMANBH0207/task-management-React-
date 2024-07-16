@@ -1,13 +1,13 @@
 import React from 'react'
 import '../style/ProfileOptions.css'
 
-function ProfileOptions(userDet) {
+function ProfileOptions({userDet}) {
   return (
     <>
     <div className="profileOptions">
                 <p><b>Account</b></p>
                 <div className="account">
-                  <img className="center" src={userDet.userDet} alt="" />
+                  <img className="center" src={userDet} alt="" />
                   <div className="center">
                     <p>User-name</p>
                     <span>User-name@gmail.com</span>

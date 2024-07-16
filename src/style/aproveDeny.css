@@ -1,0 +1,20 @@
+.savetaskDiv{
+    display:flex;
+  }
+  .saveTaskBtns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+  }
+  .saveTaskBtns button{
+    padding:0.5rem 3rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #0185e0;
+    color: white;;
+  }
+  .saveTaskBtns button:hover{
+    background-color: #053254;
+    cursor: pointer;
+  }

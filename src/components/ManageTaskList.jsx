@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../style/ManageTaskList.css";
 import { getData } from "../pages/Service";
+import AssignedUsers from "./AssignedUsers";
 
-function ManageTaskList() {
+function ManageTaskList({selectedTask}) {
   const [tasks, setTasks] = useState([]);
-
+  
   useEffect(() => {
     setTasks(getData("AddedTasks"));
   }, []);
-
-  const selectedTask =(task)=>{
-    console.log(task);
-  }
 
   return (
     <>
@@ -21,18 +18,10 @@ function ManageTaskList() {
             return (
               <li className={task.priority==="High"?"pointer high":task.priority==="Medium"?"pointer medium":"pointer low"} key={id} onClick={()=>{selectedTask(task)}}>
                 <h5 className="center">{task.title}</h5>
-                <p>{task.priority}</p>
+                <p className="priority">{task.priority}</p>
+                <p>{task.task_status}</p>
                 <div className="teamMembers">
-                  {task.assignedusers.map((assignedUser, index) => {
-                    return (
-                      <img
-                        key={index}
-                        className="center"
-                        src={assignedUser.userphoto}
-                        alt=""
-                      />
-                    );
-                  })}
+                  <AssignedUsers users={task.assignedusers} />
                 </div>
               </li>
             );

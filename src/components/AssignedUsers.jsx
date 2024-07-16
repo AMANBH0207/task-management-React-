@@ -1,14 +1,12 @@
 import React from 'react';
 import '../style/AssignedUsers.css';
 
-function AssignedUsers(users) {
+function AssignedUsers({users}) {
   return (
     <>
-    <div className="assigneduser">
-        {users.users.map((user)=>{
-            return  <img className="center" src={user.image} alt=""/>
+        {users.map((user,index)=>{
+            return  <img key={index} className="center" src={user.userphoto} alt=""/>
         })}
-    </div>
     </>
   )
 }

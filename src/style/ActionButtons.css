@@ -1,0 +1,29 @@
+.operationsDiv{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .assignButton{
+    background-color: #2255ee;
+    border:none;
+    padding:0.8rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;    
+  }
+  .editButton{
+    background-color: #018833;
+    border:none;
+    padding:0.8rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;    
+  }
+  .deleteButton{
+    background-color: #c41c1c;
+    border:none;
+    padding:0.8rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;    
+  }

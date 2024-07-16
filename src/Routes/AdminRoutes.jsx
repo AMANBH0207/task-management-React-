@@ -10,7 +10,7 @@ function AdminRoutes() {
     <div>
          <Routes>
          <Route path='' element={<Home/>}/>
-            <Route path='manage' element={<Manage />}/>
+            <Route path='manage/*' element={<Manage />}/>
             <Route path='task-for-review' element={<TaskForReview/>}/>
             <Route path='timeline' element={<TimeLine/>}/>
          </Routes> 

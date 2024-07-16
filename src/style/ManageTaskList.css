@@ -13,6 +13,7 @@
     padding: 0;
 }
 .teamMembers{
+    justify-content: center;
     display:flex;
 }
 .teamMembers img{
@@ -30,6 +31,9 @@
 }
 .taskList li h5{
     width:100px;
+}
+.priority{
+    width: 15%;
 }
 .high{
     background-color: #f10b0b49;

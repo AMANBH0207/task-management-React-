@@ -16,7 +16,7 @@ import {
 import { Link } from "react-router-dom";
 import ProfileOptions from "./ProfileOptions";
 import AdminRoutes from "../Routes/AdminRoutes";
-function NavBar({ component }) {
+function NavBar() {
   return (
     <div>
       <div className="mainDiv">
