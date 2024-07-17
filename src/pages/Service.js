@@ -6,4 +6,3 @@ export const getData =(selectedLS)=>{
 export const setData =(selectedLS,data)=>{
     localStorage.setItem(selectedLS,JSON.stringify(data));
 }
-

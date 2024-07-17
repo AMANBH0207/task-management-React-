@@ -1,16 +1,8 @@
 import React from 'react'
 import '../style/ActionButtons.css'
 
-function ActionButtons() {
-  const Assign = ()=>{
-    console.log('assign')
-  }
-  const Edit = ()=>{
-    console.log('edit')
-  }
-  const Del = ()=>{
-    console.log('delete')
-  }
+function ActionButtons({Assign, Edit, Del}) {
+ 
   return (
     <>
 

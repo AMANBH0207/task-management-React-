@@ -14,7 +14,7 @@ function Manage() {
               <Link to="">Tasks</Link>
             </li>
             <li>
-              <a href="./ManageUsers.html">Users</a>
+              <Link to="manageUsers">Users</Link>
             </li>
           </ul>
         </div>

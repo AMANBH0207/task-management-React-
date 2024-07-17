@@ -41,6 +41,16 @@
     width: 30%;
     height: 90%;
   }
+  .formInput{
+    border-bottom:1px solid gray;
+    border-top: none;
+    border-left:none;
+    border-right:none ;
+    height: 20px;
+  }
+  .formInput:focus{
+    outline: none;
+  }
   .newTaskForm textarea{
     width:85%;
     height:100px;
@@ -53,4 +63,13 @@
     box-shadow: 2px 2px 4px rgba(107, 106, 106, 0.475);
     padding:2px 2rem;
     border-radius: 5px;
+}
+
+.chooseFile::file-selector-button {  
+  box-shadow: 2px 2px 4px rgba(107, 106, 106, 0.475);
+  font-weight: bold;
+  color: dodgerblue;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
 }
