@@ -1,19 +1,22 @@
 [{
-    "TaskName":"Fron-End Task",
-    "TaskDescription":"This is a front end task",
+    "title":"Front-End Task",
+    "description":"This is a front end task",
     "assignedusers":[{"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44"},
         {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27"},
         {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da"},
         {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp4.jpeg?alt=media&token=6dcd9e2d-c75d-4ed2-b96a-b2bd168d0a97"}],
     "End_Date":"2024-06-20",
+    "posts": [],
+    "issues":[],
     "Start_Date":"2024-06-20",
     "priority":"High",
-    "task_status":"Unassigned",
-    "tasktype":"Team"
+    "task_status":"In Review",
+    "tasktype":"Team",
+    "attachments": "Task assignment logo.png"
 },
 {
-        "TaskName":"Improve UI",
-    "TaskDescription":"This is a UI Task",
+        "title":"Improve UI",
+    "description":"This is a UI Task",
     "assignedusers":[{"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44"},
         {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27"},
         {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da"},
@@ -21,12 +24,13 @@
         "End_Date":"2024-06-20",
         "Start_Date":"2024-06-20",
         "priority":"High",
-        "task_status":"Assigned",
-        "tasktype":"Team"
+        "task_status":"In Review",
+        "tasktype":"Team",
+        "attachments": "Task assignment logo.png"
 },
 {
-    "TaskName":"Fullstack Project",
-"TaskDescription":"This is a Fullstack project",
+    "title":"Fullstack Project",
+"description":"This is a Fullstack project",
 "assignedusers":[{"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da"},
@@ -34,12 +38,13 @@
     "End_Date":"2024-06-20",
     "Start_Date":"2024-06-20",
     "priority":"Low",
-    "task_status":"Unassigned",
-    "tasktype":"Team"
+    "task_status":"In Review",
+    "tasktype":"Team",
+    "attachments": "Task assignment logo.png"
 },
 {
-    "TaskName":"Backend Task",
-"TaskDescription":"This is a Backend Task",
+    "title":"Backend Task",
+"description":"This is a Backend Task",
 "assignedusers":[{"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da"},
@@ -47,12 +52,13 @@
     "End_Date":"2024-06-20",
     "Start_Date":"2024-06-20",
     "priority":"Medium",
-    "task_status":"Completed",
-    "tasktype":"Team"
+    "task_status":"In Review",
+    "tasktype":"Team",
+    "attachments": "Task assignment logo.png"
 },
 {
-    "TaskName":"React Project",
-"TaskDescription":"This is a React Project",
+    "title":"React Project",
+"description":"This is a React Project",
 "assignedusers":[{"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da"},
@@ -60,12 +66,13 @@
     "End_Date":"2024-06-20",
     "Start_Date":"2024-06-20",
     "priority":"Low",
-    "task_status":"Issue By User",
-    "tasktype":"Team"
+    "task_status":"In Review",
+    "tasktype":"Team",
+    "attachments": "Task assignment logo.png"
 },
 {
-    "TaskName":"E-commerce App",
-"TaskDescription":"This is a E-commerce App",
+    "title":"E-commerce App",
+"description":"This is a E-commerce App",
 "assignedusers":[{"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp1.jpeg?alt=media&token=c81c35a9-fb06-42e4-9885-cd076f1dde44"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp2.jpeg?alt=media&token=2ee136f8-72c7-4768-b860-5e3e42ffeb27"},
     {"image":"https://firebasestorage.googleapis.com/v0/b/restroz-6505c.appspot.com/o/users%2Fp6.jpeg?alt=media&token=31313693-ee66-490a-92fd-68bba7cfd2da"},
@@ -73,6 +80,7 @@
     "End_Date":"2024-06-20",
     "Start_Date":"2024-06-20",
     "priority":"Medium",
-    "task_status":"In Progress",
-    "tasktype":"Team"
+    "task_status":"In Review",
+    "tasktype":"Team",
+    "attachments": "Task assignment logo.png"
 }]

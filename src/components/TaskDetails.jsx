@@ -4,6 +4,7 @@ import { setData } from "../pages/Service";
 import AssignedUsers from "./AssignedUsers";
 import AssignedNames from "./AssignedNames";
 import ActionButtons from "./ActionButtons";
+import AproveDeny from "./aproveDeny";
 
 function TaskDetails({
   task, selectedIndex, setTasks, tasks, setTaskselected
@@ -28,6 +29,7 @@ function TaskDetails({
     };
     setTasks(UpdatedTasks);
     setData("AddedTasks", UpdatedTasks);
+    setSelected(UpdatedTasks);
   };
 
   const Edit = () => {
@@ -61,8 +63,6 @@ function TaskDetails({
   return (
     <>
       {/* Review Task Details */}
-      <div className="tasksReviewDet">
-        <div className="AddTaskPopup">
           {task.length === 0 ? (
             <div className="noTaskSelected">
               <b>No Task Selected</b>
@@ -178,10 +178,9 @@ function TaskDetails({
                 </div>
               </div>
               {selected.task_status === "Unassigned" && <ActionButtons Assign={Assign}  Edit={Edit} Del={Del} goBack={goBack} Update={Update} isEdited={isEdited}/> }
+              {selected.task_status==="In Review" && <AproveDeny/>}
             </>
           )}
-        </div>
-      </div>
     </>
   );
 }

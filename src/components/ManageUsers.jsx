@@ -2,21 +2,27 @@ import React, { useEffect, useState } from 'react';
 import '../style/ManageUsers.css';
 import ManageList from './ManageList';
 import { getData } from '../pages/Service';
+import DetailsLayout from './DetailsLayout';
 
 function ManageUsers() {
   const [users,setUsers]=useState([]);
+  const [userSelected, setUserSelected]=useState([]);
+  const [selectedUserIndex, setSelectedUserIndex]=useState([]);
   
   useEffect(()=>{
     setUsers(getData("AddedUsers"));
   },[])
-
-  console.log(users)
+  const selectedUser = (user, id) => {
+    setUserSelected(user);
+    setSelectedUserIndex(id);
+  };
 
   return (
     <>
 
-    <ManageList users={users}/>
-
+    <ManageList users={users} selectedUser={selectedUser}/>
+    <DetailsLayout user={userSelected} selectedUserIndex={selectedUserIndex} users={users} setUsers={setUsers} setUserSelected={setUserSelected}/>
+    
                                         
     </>
   )

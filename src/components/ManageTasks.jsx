@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import TaskDetails from "./TaskDetails";
 import ManageList from "./ManageList";
 import { getData } from "../pages/Service";
+import DetailsLayout from "./DetailsLayout";
 
 function ManageTasks() {
   const [tasks, setTasks] = useState([]);
@@ -20,7 +20,7 @@ function ManageTasks() {
   return (
     <>
       <ManageList selectedTask={selectedTask} tasks={tasks} />
-      <TaskDetails task={taskselected} selectedIndex={selectedIndex} setTasks={setTasks} tasks={tasks} setTaskselected={setTaskselected}/>
+      <DetailsLayout task={taskselected} selectedIndex={selectedIndex} setTasks={setTasks} tasks={tasks} setTaskselected={setTaskselected}/>
     </>
   );
 }
