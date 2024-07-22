@@ -64,7 +64,6 @@
     padding:2px 2rem;
     border-radius: 5px;
 }
-
 .chooseFile::file-selector-button {  
   box-shadow: 2px 2px 4px rgba(107, 106, 106, 0.475);
   font-weight: bold;

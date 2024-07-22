@@ -1,13 +1,10 @@
-import React from "react";
-import "../style/ManageTaskList.css";
+import React from 'react'
+import AssignedUsers from './AssignedUsers';
+import "../style/TaskList.css"
 
-import AssignedUsers from "./AssignedUsers";
-
-function ManageTaskList({selectedTask, tasks}) {
-  
+function TaskList({selectedTask, tasks}) {
   return (
     <>
-      <div className="taskList">
         <ul>
           {tasks.map((task, id) => {
             return (
@@ -22,9 +19,8 @@ function ManageTaskList({selectedTask, tasks}) {
             );
           })}
         </ul>
-      </div>
     </>
-  );
+  )
 }
 
-export default ManageTaskList;
+export default TaskList

@@ -134,8 +134,8 @@ useEffect(()=>{
               <label>Assigned users: </label>
               <div id="assignedNames0">
                 {usersArray.length > 0
-                  ? usersArray.map((user) => {
-                      return <span>{user.firstname}</span>;
+                  ? usersArray.map((user, id) => {
+                      return <span key={id}>{user.firstname}</span>;
                     })
                   : ""}
               </div>
@@ -177,7 +177,7 @@ useEffect(()=>{
               type="file"
               accept=".pdf, .jpg, .jpeg, .png"
               id="fileInput"
-              onChange={(e) => setVal({ ...val, attachments: e.target.value })}
+              onChange={(e) => setVal({ ...val, attachments: e.target?.files[0]?.name || " " })}
             />
             <p style={{ margin: "0" }}>
               <i style={{ color: "red" }}>
@@ -191,9 +191,9 @@ useEffect(()=>{
               {usersArray.length > 0 ? (
                 usersArray.map((user, index) => {
                   return (
-                    <>
+                    <span key={index}>
                       <FontAwesomeIcon
-                        key={index}
+                        
                         icon={faXmark}
                         className="crossbtn0 pointer"
                         onClick={() => removeUser(index)}
@@ -204,7 +204,7 @@ useEffect(()=>{
                         alt="user"
                         className="userImages0 center"
                       />
-                    </>
+                    </span>
                   );
                 })
               ) : (
@@ -233,7 +233,7 @@ useEffect(()=>{
                         AddusersInTask(user);
                       }}
                     >
-                      <img src={user.userphoto} alt="user" />
+                      <img src={user.userphoto} alt="user"  />
                       <span className="center">{user.firstname}</span>
                     </li>
                   );

@@ -1,0 +1,18 @@
+.UserList{
+    background-color: rgba(255, 216, 216, 0.499);
+    /* color: white; */
+}
+.userDet{
+    display: flex;
+    align-items: center;
+}
+.userDet img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin: 0.5rem
+}
+.center{
+    margin: auto 0 auto;
+}
