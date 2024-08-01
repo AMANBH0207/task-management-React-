@@ -1,0 +1,41 @@
+.TaskDiv{
+    background-color: white;
+    margin:10px;
+    border-radius: 15px;
+}
+.TaskDiv p{
+    font-size: 13px;
+    margin:5px 0;
+}
+.taskTeamMembers{
+    display:flex;
+}
+.taskTeamMembers img{
+    margin: 5px 0;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+.sendToNext{
+    width: max-content;
+    position: relative;
+    left:95%;
+}
+.sendNext{
+    display: none;
+    padding: 0.2rem;
+    border-radius: 5px;
+    position: absolute;
+    left: -1rem;
+    color: white;
+}
+.sendToNext:hover .sendNext{
+    display: block;
+}
+.Progress{
+    background-color: #e0465e;
+}
+.Review{
+    background-color: #fad646;
+}

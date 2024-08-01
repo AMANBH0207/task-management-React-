@@ -1,0 +1,30 @@
+.viewDiv{
+    z-index: 2;
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    width: 95%; 
+    height: 88%; 
+    position: absolute;
+}
+.view{
+    background-color: #236bcf;
+    margin-right: 1.5rem;
+}
+.Popup{
+    width:40%;
+    border-radius: 15px;
+    background-color: white;
+    border:2px solid gray;
+    overflow: hidden;
+    position:absolute;
+    left:30%;
+    line-height: 2.5rem;
+    backdrop-filter: blur(5px);
+  }
+  .newTask{
+    background-color: #eff3fa;
+    padding:0 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  

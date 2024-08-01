@@ -1,0 +1,40 @@
+.board1{
+    box-shadow: 1px 1px 1px 1px rgb(203, 202, 202);
+    border-radius: 10px;
+    width:19%;
+    padding-bottom: 0.5rem;
+}
+.board1 h4{
+    color:white;
+    padding:0 0 0 2rem;
+}
+.userTaskList{
+    height: 77vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.userTaskList ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.userTaskList li{
+    margin-bottom: 1px;
+    padding:30px;
+    justify-content: space-between;
+}
+.action{
+    background-color: #9baab3;
+}
+.toDo{
+    background-color: #3987c5;
+}
+.inProgress{
+    background-color: #e0465e;
+}
+.inReview{
+    background-color: #fad646;
+}
+.completed{
+    background-color: #77bf1e;
+}

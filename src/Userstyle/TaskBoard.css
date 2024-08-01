@@ -1,0 +1,9 @@
+.board{
+    display:flex;
+    justify-content: space-between;
+    padding:1rem 0;
+}
+.pageMargin{
+    margin:0px 2rem;
+}
+

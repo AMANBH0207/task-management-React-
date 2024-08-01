@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/ReviewCards.css';
 import AssignedUsers from './AssignedUsers';
 
-function ReviewCards({val, tasks}) {
+function ReviewCards({val}) {
   return (
     <>
         <div className="ReviewTask cards pointer">

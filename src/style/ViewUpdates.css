@@ -1,0 +1,23 @@
+.savetaskDivUpdates{
+    display:flex;
+    padding: 50px 0;
+  }
+  .saveTaskBtnsUpdates{
+    padding:0 3.1rem 0 0;
+    margin:auto 0 auto auto;
+    
+  }
+
+  .saveTaskBtnsUpdates button{
+    margin-top: 10px;
+    padding:0.5rem 1.5rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #0185e0;
+    color: white;;
+  }
+  
+  .saveTaskBtnsUpdates button:hover{
+    background-color: #053254;
+    cursor: pointer;
+  }

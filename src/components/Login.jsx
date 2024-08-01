@@ -54,7 +54,7 @@ function Login({ formVal }) {
           if (form === "LoggedAdmin") {
             navigate("/admin");
           } else {
-            navigate("/user/home");
+            navigate("/user/");
           }
         }, 5000);
       } else {

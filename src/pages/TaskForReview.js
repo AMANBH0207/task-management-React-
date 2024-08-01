@@ -1,8 +1,9 @@
 import React, {useState , useEffect} from "react";
 import "../style/TaskForReview.css";
-import data from "../Data/Data";
+
 import ReviewCards from "../components/ReviewCards";
 import DetailsLayout from "../components/DetailsLayout";
+import { getData } from "./Service";
 
 function TaskForReview() {
   const [tasks, setTasks] = useState([]);
@@ -10,22 +11,19 @@ function TaskForReview() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
-    setTasks(data);
+    setTasks(getData("AddedTasks").filter((val)=>val.task_status==="In Review"));
   }, []);
-
-
   const selectedTask = (task, id) => {
     setTaskselected(task);
     setSelectedIndex(id);
   };
-
   return (
     <>
       <div className="mainContent">
         <div className="reviewTasks">
-          {data.map((val, index) => {
-            return <div onClick={()=>selectedTask(val, index)}>
-                  <ReviewCards val={val} tasks={tasks} />
+          {tasks.map((val, index) => {
+            return <div key={index} style={{height:"max-content",  marginTop: "1rem"}} onClick={()=>selectedTask(val, index)}>
+                  <ReviewCards val={val} />
               </div>
           })}
         </div>

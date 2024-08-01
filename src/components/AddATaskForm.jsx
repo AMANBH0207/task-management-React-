@@ -6,9 +6,19 @@ import { getData, setData } from "../pages/Service";
 
 function AddATaskForm({ handleCross, successNotification, errorNotification }) {
   const [usersArray, setUsersArray] = useState([]);
-  const [arr ,setArr]=useState("");
+  const [arr, setArr] = useState([]);
   const [AddedUsers, setAddedUsers] = useState(getData("AddedUsers"));
+  const [tasks, setTasks] = useState([]);
+
+  const [recall, setRecall] = useState(false);
+
+  useEffect(() => {
+    setTasks(getData("AddedTasks"));
+  }, [recall]);
+
+  console.log(tasks);
   const [val, setVal] = useState({
+    id: "",
     title: "",
     description: "",
     tasktype: "",
@@ -24,10 +34,10 @@ function AddATaskForm({ handleCross, successNotification, errorNotification }) {
   //for searching users
   const [searchUsers, setSearchUsers] = useState("");
   const [results, setResults] = useState([]);
-//calling ls to get the data
-useEffect(()=>{
-  setArr(getData("AddedTasks"));
-},[])
+  //calling ls to get the data
+  useEffect(() => {
+    setArr(getData("AddedTasks"));
+  }, []);
   useEffect(() => {
     const updatedTaskType =
       usersArray.length === 1
@@ -79,6 +89,8 @@ useEffect(()=>{
     } else if (val.priority.length === 0) {
       errorNotification("Please specify the priority");
     } else {
+      val.id = tasks[tasks.length - 1]?.id + 1 || 0;
+      setRecall(!recall);
       arr.push(val);
       successNotification("Task Added Successfully");
       setData("AddedTasks", arr);
@@ -177,7 +189,9 @@ useEffect(()=>{
               type="file"
               accept=".pdf, .jpg, .jpeg, .png"
               id="fileInput"
-              onChange={(e) => setVal({ ...val, attachments: e.target?.files[0]?.name || " " })}
+              onChange={(e) =>
+                setVal({ ...val, attachments: e.target?.files[0]?.name || " " })
+              }
             />
             <p style={{ margin: "0" }}>
               <i style={{ color: "red" }}>
@@ -193,7 +207,6 @@ useEffect(()=>{
                   return (
                     <span key={index}>
                       <FontAwesomeIcon
-                        
                         icon={faXmark}
                         className="crossbtn0 pointer"
                         onClick={() => removeUser(index)}
@@ -233,7 +246,7 @@ useEffect(()=>{
                         AddusersInTask(user);
                       }}
                     >
-                      <img src={user.userphoto} alt="user"  />
+                      <img src={user.userphoto} alt="user" />
                       <span className="center">{user.firstname}</span>
                     </li>
                   );

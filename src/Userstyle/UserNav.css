@@ -1,0 +1,110 @@
+.userBody{
+    padding:0.5rem;
+}
+.userNavBar{
+    justify-content: space-between;
+    width:100%;
+    display: flex;
+    border-bottom: 2px solid rgb(220, 210, 210) ;
+    height:50px;
+}
+.navBar h1{
+    margin-left: 2rem;
+}
+.navBar1{
+    display:flex;
+    width:60%;
+}
+.Userlogo{
+    height: 40px;
+    padding:0.4rem;
+}
+.userNavLinks{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.userNavLinks li{
+    padding:0 1rem;
+}
+.userNavLinks a{
+    color:black;
+    text-decoration: none;
+}
+.inputSearchUser{
+    border:2px solid rgb(174, 174, 174);
+    border-radius: 10px;
+    display:flex;
+    height: 70%;
+    overflow: hidden;
+}
+.inputSearchUser i{
+    margin: 0 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:gray;
+}
+.inputSearchUser input{
+    border:none;   
+}
+.inputSearchUser input:focus{
+    outline: none;
+}
+.userProfileUsr{
+    display:flex;
+    width:35%;
+    margin-right:2rem;
+    justify-content: space-around;
+}
+.allUserProfileDiv{
+    display: flex;
+    position: relative;
+}
+.profileOptions{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    border:2px solid rgb(203, 202, 202);
+    padding:1rem 2.5rem;
+    background-color: white;
+    top: 50px;
+    right: 0px;
+}
+.profileOptions a{
+    color:black;
+    text-decoration: none;
+}
+.allUserProfileDiv:hover .profileOptions{
+    display: block;
+}
+.allUserProfileDiv img{
+    border-radius: 50%;
+    height: 40px;
+}
+.bellIcon{
+    display:flex;
+    width:60%;
+    justify-content: space-around;
+}
+.bellIcon i{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.account{
+    display: flex;
+    border-bottom:2px solid rgb(203, 202, 202); 
+    padding-bottom: 1rem;
+}
+
+.account p{
+    margin: 0 0 0 1rem ;
+}
+
+.account span{
+ color:gray;
+ margin: 0 0 0 1rem ;
+}
+.Manage{
+    border-bottom:2px solid rgb(203, 202, 202); 
+    padding-bottom: 0.5rem;
+}

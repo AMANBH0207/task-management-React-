@@ -4,7 +4,6 @@
     border-radius: 20px;
     padding:20px;
     height: 150px;
-    margin-top: 1rem;
     color:rgb(0, 0, 0);
 }
 .cards:hover{
@@ -12,4 +11,8 @@
 }
 .ReviewTask{
     background-color: #f8cf2abd;
+}
+.ReviewTask Img{
+    height: 35px;
+    border-radius: 50%;
 }

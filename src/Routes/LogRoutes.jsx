@@ -5,6 +5,7 @@ import Signup from '../components/Signup'
 import ForgorPassword from '../components/ForgotPassword'
 import Welcomepage from '../pages/Welcome_page'
 import NavBar from '../components/NavBar'
+import UserNav from '../UserComponents/UserNav'
 
 function LogRoutes() {
   return (
@@ -14,6 +15,7 @@ function LogRoutes() {
         <Route path='/login-admin' element={<Login formVal={true} />} />
         <Route path='/signup-admin' element={<Signup formVal={true} />} />
         <Route path='/forgotPassword-admin' element={<ForgorPassword formVal={true}/>} />
+        <Route path='/user/*' element={<UserNav/>}/>
         <Route path='/login-user' element={<Login formVal={false}/>} />
         <Route path='/signup-user' element={<Signup formVal={false}/>} />
         <Route path='/forgotPassword-user' element={<ForgorPassword formVal={false}/>} />
