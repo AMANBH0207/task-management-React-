@@ -1,0 +1,31 @@
+.postupdatesSection ul{
+    list-style: none;
+    padding:0;
+  }
+  .postupdatesSection li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+    margin-top: 2px;
+  }
+  .postupdatesSection li:hover{
+    background-color: #ebf5fa;
+    cursor: pointer;
+  }
+  .viewButton{
+    background-color: #03a400;
+    padding:5px 10px;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+  }
+  .deleteButtonBtn{
+    background-color: #f10b0b;
+    padding:5px 10px;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+  }

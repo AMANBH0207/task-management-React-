@@ -27,11 +27,10 @@ function ForgotPassword({formVal}) {
   const notify = (message) => toast.error(message,{
     progressStyle: { background: 'red' }
   });
-
   return (
     <>
     <div>
-        <ToastContainer />
+        <ToastContainer/>
       </div>
 
       <nav>
@@ -62,7 +61,6 @@ function ForgotPassword({formVal}) {
                 <input id="OTP" name="OTP" type="number" placeholder="Enter OTP" onChange={(e)=>setVal({...val,otp:e.target.value})} />
               </div>
               <button className="changeButton pointer" onClick={handleSubmit}>Change Password</button>
-              <div id="errors"></div>
             </form>
           </div>
         </div>

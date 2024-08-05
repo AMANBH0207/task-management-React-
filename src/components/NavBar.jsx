@@ -13,9 +13,8 @@ import {
   faMagnifyingGlass,
   faUsersGear,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import ProfileOptions from "./ProfileOptions";
-import AdminRoutes from "../Routes/AdminRoutes";
 function NavBar() {
   return (
     <div>
@@ -28,12 +27,12 @@ function NavBar() {
           </div>
           <ul className="navLinks">
             <li>
-              <Link to="">
+              <Link to="home">
                 <FontAwesomeIcon icon={faHouse} />
               </Link>
             </li>
             <li>
-              <Link to="manage">
+              <Link to="manage/manageTasks">
                 <FontAwesomeIcon icon={faUsersGear} />
               </Link>
             </li>
@@ -95,7 +94,7 @@ function NavBar() {
               </div>
             </div>
           </div>
-          <AdminRoutes />
+          <Outlet/>
         </div>
       </div>
     </div>

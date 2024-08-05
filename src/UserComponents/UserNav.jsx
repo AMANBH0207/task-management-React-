@@ -3,7 +3,7 @@ import '../Userstyle/UserNav.css';
 import logo from '../Userphotos/Task assignment logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faHouse,faCircleExclamation,faMagnifyingGlass, faBell,faCircleQuestion,faGear,faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
-import UserRoutes from '../Routes/UserRoutes';
+import { Outlet } from 'react-router-dom';
 
 
 function UserNav() {
@@ -53,7 +53,7 @@ function UserNav() {
                 </div>
             </div>
         </nav>
-        <UserRoutes/>
+        <Outlet/>
     </div>
   )
 }

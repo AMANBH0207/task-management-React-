@@ -47,7 +47,7 @@ function Welcome_page() {
               display: "flex",
             }}
           >
-            <div style={{padding:"1rem 2.5rem"}}>
+            <div style={{ padding: "1rem 2.5rem" }}>
               <h2>Not Satisfied? Reassign....</h2>
               <div style={{ fontSize: "13px" }}>
                 <p>
@@ -95,7 +95,7 @@ function Welcome_page() {
               alt="update"
               style={{ border: "10px solid #699a23" }}
             />
-            <div style={{padding:"1rem 2.5rem"}}>
+            <div style={{ padding: "1rem 2.5rem" }}>
               <h2>Post Updates</h2>
               <div style={{ fontSize: "13px" }}>
                 <p>
@@ -135,7 +135,7 @@ function Welcome_page() {
               display: "flex",
             }}
           >
-            <div style={{padding:"1rem 2.5rem"}}>
+            <div style={{ padding: "1rem 2.5rem" }}>
               <h2>Manage Tasks</h2>
               <div style={{ fontSize: "13px" }}>
                 <p>

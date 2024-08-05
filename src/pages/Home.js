@@ -10,6 +10,7 @@ function Home() {
   const [memberCount, setMemberCount] = useState(
     JSON.parse(localStorage.getItem("AddedUsers"))?.length || 0
   );
+  
   function memberCounts(){
     let Addedusers=JSON.parse(localStorage.getItem("AddedUsers")) || [];
     let count=Addedusers.length
@@ -27,7 +28,6 @@ function Home() {
       progressStyle: { background: 'red' }
     });
   }
-
   return (
     <>
     <div>

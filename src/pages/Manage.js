@@ -1,7 +1,6 @@
 import React from "react";
 import "../style/Manage.css";
-import ManageRoutes from "../Routes/ManageRoutes";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function Manage() {
   return (
@@ -11,14 +10,14 @@ function Manage() {
         <div className="choose">
           <ul>
             <li>
-              <Link to="">Tasks</Link>
+              <Link to="manageTasks">Tasks</Link>
             </li>
             <li>
               <Link to="manageUsers">Users</Link>
             </li>
           </ul>
         </div>
-        <ManageRoutes />
+        <Outlet/>
       </div>
     </>
   );

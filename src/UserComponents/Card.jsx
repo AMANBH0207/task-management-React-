@@ -7,8 +7,7 @@ import { ctx } from "./TaskBoard";
 import UpdatePost from "./UpdatePost";
 
 function Card({ task }) {
-  const { sendToInProgress,sendForReview } = useContext(ctx);
-
+  const { sendToInProgress,sendForReview,showPopup } = useContext(ctx);
   let bgColor="";
   let sendText="";
   if(task.task_status==="Accepted"){
@@ -18,7 +17,6 @@ function Card({ task }) {
     bgColor="Review";
     sendText="Send For Review"
   }
-
   const sendToNext = () =>{
     if(task.task_status==="Accepted"){
       sendToInProgress(task)
@@ -27,7 +25,9 @@ function Card({ task }) {
       sendForReview(task)
     }
   }
-
+  const showDetailedTask=(task)=>{
+    showPopup(task,"Task Details")
+  }
   return (
     <div>
       <li className="TaskDiv">
@@ -41,6 +41,7 @@ function Card({ task }) {
             </div>
           </div>
         )}
+        <div className="pointer" onClick={()=>showDetailedTask(task)}>
         <h5 className="center">{task.title}</h5>
         <p>
           Priority:<b>{task.priority}</b>
@@ -51,6 +52,7 @@ function Card({ task }) {
         <p>
           Due date:<b>{task.End_Date}</b>
         </p>
+        </div>
         <div className="taskTeamMembers">
           {task.assignedusers.map((user, index) => {
             return (
@@ -64,7 +66,8 @@ function Card({ task }) {
           })}
         </div>
         {task.task_status === "Assigned" && <AcceptRejectbuttons task={task} />}
-        {task.task_status ==="In Progress" && <UpdatePost />}
+        {task.task_status ==="In Progress" && <UpdatePost  task={task}/>}
+
       </li>
     </div>
   );

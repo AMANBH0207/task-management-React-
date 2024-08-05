@@ -1,0 +1,31 @@
+.TaskNameClass {
+    font-weight: 700;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    margin: 1rem 2rem;
+    font-size: larger;
+    box-shadow: 2px 2px 4px rgba(107, 106, 106, 0.475);
+    border-radius: 10px;
+}
+.newTaskForm{
+    padding: 0.5rem 2rem 2rem;
+    width:80%
+  }
+  .savetaskDiv{
+    display:flex;
+  }
+  .saveTaskBtns{
+    padding:0.5rem 2rem 0.5rem 0;
+    margin:auto 0 auto auto;
+  }
+  .saveTaskBtns button{
+    padding:0.5rem 3rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #23cf54;
+    color: white;;
+  }
+  .saveTaskBtns button:hover{
+    background-color: #0a5a21;
+    cursor: pointer;
+  }

@@ -21,7 +21,7 @@ function Login({ formVal }) {
     email: "",
     password: "",
   });
-// Calling function on clicking submit button
+  // Calling function on clicking submit button
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = loginValidations();
@@ -52,7 +52,7 @@ function Login({ formVal }) {
         toast.success("Login Successful");
         setTimeout(() => {
           if (form === "LoggedAdmin") {
-            navigate("/admin");
+            navigate("/Admin/home");
           } else {
             navigate("/user/");
           }
@@ -62,7 +62,7 @@ function Login({ formVal }) {
       }
     }
   }
-//Generating notifications on toast
+  //Generating notifications on toast
   const notify = (message) =>
     toast.error(message, {
       progressStyle: { background: "red" },

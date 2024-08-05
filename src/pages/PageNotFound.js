@@ -7,7 +7,7 @@ function PageNotFound() {
   return (
     <div>PageNotFound
 
-<AssignedUsers users={data[0].assignedusers}/>
+      <AssignedUsers users={data[0].assignedusers}/>
     </div>
   )
 }
