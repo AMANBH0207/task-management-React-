@@ -1,0 +1,25 @@
+.issuesDiv{
+    display:flex;
+}
+.issue1 {
+    width: 10%;
+    height: 80vh;
+    border-right:2px solid rgb(203, 202, 202); 
+    padding:2rem 1rem;
+}
+
+
+.issue1 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.issue1 li{
+    margin: 2rem 0;
+}
+
+.issue1 a{
+  color:rgb(0, 48, 119);
+    text-decoration: none;
+}

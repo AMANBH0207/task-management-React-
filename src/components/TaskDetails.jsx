@@ -12,6 +12,7 @@ function TaskDetails({
   setTasks,
   tasks,
   setTaskselected,
+  showViewButton
 }) {
   const [selected, setSelected] = useState(null);
   const [isEdited, setIsEdited] = useState(true);
@@ -187,7 +188,7 @@ function TaskDetails({
               isEdited={isEdited}
             />
           )}
-          {selected.task_status === "In Review" && <ViewUpdates />}
+          {selected.task_status === "In Review"&& showViewButton && <ViewUpdates />}
         </>
       )}
     </>

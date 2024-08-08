@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../style/ViewUpdates.css"
+import ButtonComp from "./ButtonComp";
+import { ReviewCtx } from "../pages/TaskForReview";
 
 function ViewUpdates() {
+  const { showPopup }=useContext(ReviewCtx);
   return (
     <div>
-      <div class="savetaskDivUpdates">
-        <div class="saveTaskBtnsUpdates">
-          <button >View Updates</button>
+      <div className="savetaskDivUpdates">
+        <div className="saveTaskBtnsUpdates">
+          <ButtonComp ButtonName={"View Updates"} onClick={()=>showPopup("All Updates")}/>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ function AddATaskForm({ handleCross, successNotification, errorNotification }) {
     End_Date: "",
     priority: "",
     posts: [],
-    issues: [],
+    issues: {},
     attachments: "",
   });
   //for searching users

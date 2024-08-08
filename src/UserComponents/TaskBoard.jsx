@@ -14,7 +14,7 @@ function TaskBoard() {
   const [show, setShow] = useState(false);
   const [selectedTask, setSelectedTask] = useState(null);
   const [formName, setFormName] = useState(null);
-  const [posts,setPosts] = useState([])
+  const [posts, setPosts] = useState([]);
   let action = [];
   let toDo = [];
   let inProgress = [];
@@ -96,23 +96,23 @@ function TaskBoard() {
     setSelectedTask(task);
     setFormName(formName);
   };
-  const showUpdatesPopup=(post,formName)=>{
+  const showUpdatesPopup = (post, formName) => {
     setShow(true);
-    setPosts(post)
+    setPosts(post);
     setFormName(formName);
-  }
+  };
   const hidePopup = () => {
     setShow(false);
   };
-  function successNotification(message){
-    toast.success(message,{
-      autoClose: 2000
+  function successNotification(message) {
+    toast.success(message, {
+      autoClose: 2000,
     });
   }
 
-  function errorNotification(message){
-    toast.error(message,{
-      progressStyle: { background: 'red' }
+  function errorNotification(message) {
+    toast.error(message, {
+      progressStyle: { background: "red" },
     });
   }
 
@@ -129,12 +129,19 @@ function TaskBoard() {
         successNotification,
         errorNotification,
         hidePopup,
-        selectedTask
+        selectedTask,
       }}
     >
       <div className="board pageMargin">
-      <ToastContainer />
-        {show && <BlurBgForm hidePopup={hidePopup} formName={formName} posts={posts}/>}
+        <ToastContainer />
+        {show && (
+          <BlurBgForm
+            hidePopup={hidePopup}
+            formName={formName}
+            posts={posts}
+            setFormName={setFormName}
+          />
+        )}
         <Board boardType={"action"} boardName={"ACTION"} taskType={action} />
         <Board boardType={"toDo"} boardName={"TO DO"} taskType={toDo} />
         <Board

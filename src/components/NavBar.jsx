@@ -21,9 +21,9 @@ function NavBar() {
       <div className="mainDiv">
         <nav className="navBar">
           <div className="logo">
-            <a href="./Dashboard.html">
+            <Link to="home">
               <img src={taskassignmentlogo} alt="taskassignmentlogo" />
-            </a>
+            </Link>
           </div>
           <ul className="navLinks">
             <li>
@@ -47,7 +47,7 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <Link to="create-an-issue">
+              <Link to="issues/create">
                 <FontAwesomeIcon icon={faCircleExclamation} />
               </Link>
             </li>

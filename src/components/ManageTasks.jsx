@@ -20,7 +20,7 @@ function ManageTasks() {
   return (
     <>
       <ManageList selectedTask={selectedTask} tasks={tasks} />
-      <DetailsLayout task={taskselected} selectedIndex={selectedIndex} setTasks={setTasks} tasks={tasks} setTaskselected={setTaskselected}/>
+      <DetailsLayout task={taskselected} selectedIndex={selectedIndex} setTasks={setTasks} tasks={tasks} setTaskselected={setTaskselected} showViewButton={false}/>
     </>
   );
 }

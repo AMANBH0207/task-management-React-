@@ -1,0 +1,81 @@
+.AddIssuePopup {
+  padding: 2rem 0rem;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+  line-height: 2rem;
+}
+
+.recievedIssues {
+  width: 90%;
+  background-color: white;
+  line-height: 2.5rem;
+}
+
+.newTask {
+  background-color: #eff3fa;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newIssueForm{
+  padding: 2rem;
+  line-height: 2.2rem;
+}
+
+.newIssueForm textarea {
+  width: 85%;
+  height: 100px;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1rem;
+}
+
+.newIssueForm span {
+  box-shadow: 2px 2px 4px rgba(107, 106, 106, 0.475);
+  padding: 2px 2rem;
+  border-radius: 5px;
+}
+
+.upOptions {
+  display: flex;
+  height: 2rem;
+  width: 100%;
+}
+
+.upOptions1 {
+  margin: auto 0 auto auto;
+  padding: 0 2rem;
+}
+
+.upOptions1 a {
+  padding: 0 0.3rem 0 2rem;
+  text-decoration: none;
+  color: #435b78;
+}
+.createIssue {
+  width: 90%;
+}
+.saveIssueDiv{
+  display: flex;
+  justify-content: flex-end;
+  padding:0 5rem
+}
+.saveIssueBtns{
+  display: flex;
+  
+}
+.saveIssueBtns button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #0185e0;
+  color: white;
+}
+
+.saveIssueBtns button:hover{
+  background-color: #053254;
+  cursor: pointer;
+}

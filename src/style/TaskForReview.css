@@ -17,3 +17,6 @@
   height: 89vh;
   border-right: 2px solid rgb(220, 210, 210);
 }
+.noTaskForReview{
+  margin: auto;
+}

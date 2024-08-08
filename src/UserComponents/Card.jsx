@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { ctx } from "./TaskBoard";
 import UpdatePost from "./UpdatePost";
+import ViewIssuesbtn from "./ViewIssuesbtn";
 
 function Card({ task }) {
   const { sendToInProgress,sendForReview,showPopup } = useContext(ctx);
@@ -67,6 +68,8 @@ function Card({ task }) {
         </div>
         {task.task_status === "Assigned" && <AcceptRejectbuttons task={task} />}
         {task.task_status ==="In Progress" && <UpdatePost  task={task}/>}
+        {Object.keys(task.issues).length!==0 &&<ViewIssuesbtn/>}
+          
 
       </li>
     </div>

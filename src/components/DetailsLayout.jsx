@@ -3,12 +3,12 @@ import "../style/DetailsLayout.css";
 import TaskDetails from "./TaskDetails";
 import UserDetails from "./UserDetails";
 
-function DetailsLayout({task, selectedIndex, setTasks, tasks, setTaskselected, user, selectedUserIndex, users, setUsers, setUserSelected}) {
+function DetailsLayout({task, selectedIndex, setTasks, tasks, setTaskselected, user, selectedUserIndex, users, setUsers, setUserSelected, showViewButton}) {
   return (
     <>
       <div className="tasksReviewDet">
         <div className="AddTaskPopup">
-        {task?<TaskDetails task={task} selectedIndex={selectedIndex} setTasks={setTasks} tasks={tasks} setTaskselected={setTaskselected}/>
+        {task?<TaskDetails task={task} selectedIndex={selectedIndex} setTasks={setTasks} tasks={tasks} setTaskselected={setTaskselected} showViewButton={showViewButton}/>
         :
         <>
         <UserDetails user={user} selectedUserIndex={selectedUserIndex} users={users} setUsers={setUsers} setUserSelected={setUserSelected}/>
